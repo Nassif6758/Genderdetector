@@ -1,0 +1,118 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@400;700&display=swap');
+
+body {
+    background-color: #ffecb3;
+    font-family: 'Raleway', sans-serif;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #d32f2f;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #00796b;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search {
+    font-family: 'Raleway', sans-serif;
+    padding: 0.75rem;
+    width: 80%;
+    max-width: 300px;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+#know {
+    background-color: #ff5722;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#know:hover {
+    background-color: #e64a19;
+}
+
+#genderinfo {
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    color: #00796b;
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    #know {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 0.875rem;
+    }
+
+    #search {
+        font-size: 0.875rem;
+    }
+
+    #know {
+        font-size: 0.875rem;
+    }
+}
